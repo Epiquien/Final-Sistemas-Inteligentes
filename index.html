@@ -1,0 +1,287 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <style>
+        h2{
+            color: black;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="four columns">
+                    <h1><img src="img/LogoTienda.PNG" alt="">Tienda</h1>
+                </div>
+                <div class="two columns u-pull-right">
+                    <ul>
+                        <li class="subprodu">
+                            <img src="img/cart.png" alt="">
+                            <div id="carrito">
+                                <p class="vacio">carrito vacio</p>
+                                <table id="lista-carrito" class="u-full-width">
+                                    <thead>
+                                        <tr>
+                                            <th>Imagen</th>
+                                            <th>Productos</th>
+                                            <th>Precio</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        
+                                    </tbody>
+                                </table>
+                                <a href="#" id="vaciar-carrito"
+                                class="button u-full-width">vaciar carrito</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="fondo">
+        <div class="container"> 
+            <div class="row">  
+                <div class="six columns">
+                    <div class="contenido-fondo">
+                        
+                            <h2 >  MiniMarket Caxas</h2>
+                       
+                        <form>
+                            <input class="u-full-width" type="text" placeholder="¿Que producto desea buscar?" id="buscador">
+                            <input type="submit" class="submit-buscador">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="barra">
+        <div class="container">
+            <div class="row">
+               
+                <div class="four columns icono icono2">
+                    <p>Venta de todo tipo de productos<br>
+                        Nos encontramos en Jirón gladiolos 4536 al costado de la empresa diaz</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="lista-productos" class="container">
+        <h1 class="encabezado">Pedidos en Linea</h1>
+
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/Colgate.png" class="imagen u-full-width">
+                    <div class="info-card">
+                        <h4>Colgate </h4>
+                        <p>COLGATE Triple Acción Tubo 75mla</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio"> <span class="u-pull-right">S/ 5.60</span> </p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/Oreo.png" class="imagen u-full-width">
+                    <div class="info-card">
+                        <h4>Galletas Oreo</h4>
+                        <p>Galletas oreo sin gluten </p>
+                        <img src="img/estrellas.png">
+                        <p class="precio"> <span class="u-pull-right">s/ 8.00</span> </p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="2">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/detergenteBolivar.jpg.png" class="imagen u-full-width">
+                    <div class="info-card">
+                        <h4>Detergente</h4>
+                        <p>Detergente bolivar 780 gr</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio"> <span class="u-pull-right">S/ 9.20</span> </p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="3">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/vainilla.png" class="imagen u-full-width">
+                    <div class="info-card">
+                        <h4>Galletas Vainilla</h4>
+                        <p>Paquete de galletas Vainilla 120 gr</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio"><span class="u-pull-right">S/ 2.00</span> </p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="4">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/sublime.jpg" class="imagen u-full-width" id="IdSublime">
+                    <div class="info-card">
+                        <h4>Sublime</h4>
+                        <p>Caja de sublime 20 unidades</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio"> <span class="u-pull-right">S/ 11.00</span> </p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="5">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/inkaKola.png" class="imagen u-full-width">
+                    <div class="info-card">
+                        <h4>Inka Kola</h4>
+                        <p>Gaseosa Inka Kola 2.25L</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio"> <span class="u-pull-right">S/ 7.00</span> </p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="6">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/ShampoEgo.png" class="imagen u-full-width">
+                    <div class="info-card">
+                        <h4>Shampoo EGO</h4>
+                        <p>Shampoo EGO Fusion Máxima Protección 400 ML</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio"> <span class="u-pull-right">S/ 18.00</span> </p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="7">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/Yogurt.png" class="imagen- u-full-width" id="IdYogur">
+                    <div class="info-card">
+                        <h4>Yogur Gloria</h4>
+                        <p>Yogur Gloria Sabor Fresa 1L</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio"> <span class="u-pull-right">S/ 5.50</span> </p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="8">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/cereales.png" class="imagen- u-full-width">
+                    <div class="info-card">
+                        <h4>Cereales</h4>
+                        <p>Cereales Angel 1kg</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio"> <span class="u-pull-right">S/ 15</span> </p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="9">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/aceitePrimor.png" class="imagen- u-full-width">
+                    <div class="info-card">
+                        <h4>Aceite Primor</h4>
+                        <p>Aceite Primor Premium 1L</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio"> <span class="u-pull-right">S/ 8.00</span> </p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="10">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/mayonesa.png" class="imagen- u-full-width" id="IdMayonesa">
+                    <div class="info-card">
+                        <h4>Mayonesa</h4>
+                        <p>Mayonesa AlaCena 120 g</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio"> <span class="u-pull-right">S/ 2.00</span> </p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="11">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/lecheGloria.jpg" class="imagen- u-full-width">
+                    <div class="info-card">
+                        <h4>Leche Gloria</h4>
+                        <p>Leche Gloria 400 g</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio"> <span class="u-pull-right">S/ 3.50</span> </p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="12">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <footer class="footer"> 
+        <div class="container">
+            <div class="row">
+                <div class="four columns">
+                    <nav class="produ">
+                        <a class="enlace" href="#">Pedidos a domicilio</a>
+                        <a class="enlace" href="#">Pedidos por telefono</a>
+                        <a class="enlace" href="#">Bebidas</a>
+                    </nav>
+                </div>
+                <div class="four columns">
+                    <nav class="produ">
+                        
+                        <a class="enlace" href="#">Ubicacion</a>
+                        <a class="enlace" href="#">Telefono</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"> </script>
+
+
+    <script>
+        window.watsonAssistantChatOptions = {
+            integrationID: "d8e75602-cc1b-4afb-bdb5-2f9a5cba519f", 
+            region: "us-south", 
+            serviceInstanceID: "3c6dcfe5-f69d-480f-a3fe-aa8ab1275926", 
+            onLoad: function(instance) { instance.render(); }
+          };
+        setTimeout(function(){
+          const t=document.createElement('script');
+          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+          document.head.appendChild(t);
+        });
+      </script>
+      
+</body>
+</html>
